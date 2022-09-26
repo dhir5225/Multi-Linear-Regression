@@ -10,19 +10,20 @@ Simple linear regression is a function that allows an analyst or statistician to
 
 The multiple regression model is based on the following assumptions:
 
-### 1.There is a linear relationship between the dependent variables and the independent variables
+#### 1.There is a linear relationship between the dependent variables and the independent variables
 
 The first assumption of multiple linear regression is that there is a linear relationship between the dependent variable and each of the independent variables. The best way to check the linear relationships is to create scatterplots and then visually inspect the scatterplots for linearity. If the relationship displayed in the scatterplot is not linear, then the analyst will need to run a non-linear regression or transform the data
 
-### 2.The independent variables are not too highly correlated with each other
+#### 2.The independent variables are not too highly correlated with each other
 
 The data should not show multicollinearity, which occurs when the independent variables (explanatory variables) are highly correlated. When independent variables show multicollinearity, there will be problems figuring out the specific variable that contributes to the variance in the dependent variable. The best method to test for the assumption is the Variance Inflation Factor method
 
-### 3.yi observations are selected independently and randomly from the population
+#### 3.yi observations are selected independently and randomly from the population
 
-### 4.Residuals should be normally distributed with a mean of 0 and variance σ
+#### 4.Residuals should be normally distributed with a mean of 0 and variance σ
 
 Multiple linear regression assumes that the amount of error in the residuals is similar at each point of the linear model. This scenario is known as homoscedasticity. When analyzing the data, the analyst should plot the standardized residuals against the predicted values to determine if the points are distributed fairly across all the values of independent variables. To test the assumption, the data can be plotted on a scatterplot or by using statistical software to produce a scatterplot that includes the entire model.
+
 
 The coefficient of determination (R-squared) is a statistical metric that is used to measure how much of the variation in outcome can be explained by the variation in the independent variables. R2 always increases as more predictors are added to the MLR model, even though the predictors may not be related to the outcome variable.
 
