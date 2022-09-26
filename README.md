@@ -42,3 +42,34 @@ A multiple regression considers the effect of more than one explanatory variable
 ## Why would one use a multiple regression over a simple OLS regression?
 A dependent variable is rarely explained by only one variable. In such cases, an analyst uses multiple regression, which attempts to explain a dependent variable using more than one independent variable. The model, however, assumes that there are no major correlations between the independent variables
 
+## Conditions of application
+
+
+As for simple linear regression, multiple linear regression requires some conditions of application for the model to be usable and the results to be interpretable. Conditions for simple linear regression also apply to multiple linear regression, that is:
+
+1.Linearity of the relationships between the dependent and independent variables11
+
+2.Independence of the observations
+
+3.Normality of the residuals
+
+4.Homoscedasticity of the residuals
+
+5.No influential points (outliers)
+
+But there is one more condition for multiple linear regression:
+
+6.No multicollinearity:
+
+Multicollinearity arises when there is a strong linear correlation between the independent variables, conditional on the other variables in the model. It is important to check it because it may lead to an imprecision or an instability of the estimated parameters when a variable changes. It can be assessed by studying the correlation between each pair of independent variables, or even better, by computing the variance inflation factor (VIF). The VIF measures how much the variance of an estimated regression coefficient increases, relative to a situation in which the explanatory variables are strictly independent. A high value of VIF is a sign of multicollinearity (the threshold is generally admitted at 5 or 10 depending on the domain). The easiest way to reduce the VIF is to remove some correlated independent variables, or eventually to standardize the data.
+
+## How to choose a good linear model?
+
+A model which satisfies the conditions of application is the minimum requirement, but you will likely find several models that meet this criteria. So one may wonder how to choose between different models that are all valid?
+
+The three most common tools to select a good linear model are according to:
+
+1.The p-value associated to the model,
+
+2.the coefficient of determination R^2 and
+
