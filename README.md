@@ -47,13 +47,15 @@ A dependent variable is rarely explained by only one variable. In such cases, an
 
 As for simple linear regression, multiple linear regression requires some conditions of application for the model to be usable and the results to be interpretable. Conditions for simple linear regression also apply to multiple linear regression, that is:
 
-1.Linearity of the relationships between the dependent and independent variables11
+1.Linearity of the relationships between the dependent and independent variables should be linear
 
 2.Independence of the observations
 
 3.Normality of the residuals
 
 4.Homoscedasticity of the residuals
+
+Constant variance of the errors should be maintained.
 
 5.No influential points (outliers)
 
@@ -73,3 +75,30 @@ The three most common tools to select a good linear model are according to:
 
 2.the coefficient of determination R^2 and
 
+## Dummy Variable:
+
+As we know in the Multiple Regression Model we use a lot of categorical data. Using Categorical Data is a good method to include non-numeric data into the respective Regression Model. Categorical Data refers to data values that represent categories-data values with the fixed and unordered number of values, for instance, gender(male/female). In the regression model, these values can be represented by Dummy Variables. 
+These variables consist of values such as 0 or 1 representing the presence and absence of categorical values. 
+
+![image](https://user-images.githubusercontent.com/109084435/192427263-65d079ac-46e4-4236-8ef9-6a2110f29147.png)
+
+## Dummy Variable Trap:
+
+The Dummy Variable Trap is a condition in which two or more are Highly Correlated. In the simple term, we can say that one variable can be predicted from the prediction of the other. The solution of the Dummy Variable Trap is to drop one of the categorical variables. So if there are m Dummy variables then m-1 variables are used in the model. 
+
+## Steps Involved in any Multiple Linear Regression Model
+#### Step #1: Data Pre Processing 
+
+1.Importing The Libraries.
+
+2.Importing the Data Set.
+
+3.Encoding the Categorical Data.
+
+4.Avoiding the Dummy Variable Trap.
+
+5.Splitting the Data set into Training Set and Test Set.
+
+#### Step #2: Fitting Multiple Linear Regression to the Training set 
+
+#### Step #3: Predicting the Test set results.
